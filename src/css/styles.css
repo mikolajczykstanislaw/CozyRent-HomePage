@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header-img {
+  position: relative;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7) url("../../dist/img/modern-house-big.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+.header-img .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header-img .white-header {
+  background-color: #fff;
+}
+.header-img .white-header .logo {
+  font-size: 3rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.header-img .white-header .navbar a {
+  position: relative;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 4rem;
+}
+.header-img .white-header .navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background: #000;
+  transition: 0.3s;
+}
+.header-img .logo {
+  font-size: 3rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+.header-img .navbar a {
+  position: relative;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 4rem;
+}
+.header-img .navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background: #fff;
+  transition: 0.3s;
+}
+.header-img .navbar a:hover::before {
+  width: 100%;
+}
+.header-img .left-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 30%;
+  color: #fff;
+}
+.header-img .left-container .header-title {
+  font-size: 5rem;
+  font-weight: 100;
+  width: 60rem;
+}
+.header-img .left-container .header-text {
+  margin-top: 2rem;
+  width: 65rem;
+  font-size: 1.5rem;
+}
+
+.main {
+  min-height: 100vh;
+}/*# sourceMappingURL=styles.css.map */

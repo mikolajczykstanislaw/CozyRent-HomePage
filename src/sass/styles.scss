@@ -47,10 +47,12 @@ table {
 }
 
 .header-img {
+    position: relative;
 	min-height: 100vh;
-	background: url('../../dist/img/modern-house-big.jpg') no-repeat;
+	background: rgba(0,0,0,0.7) url('../../dist/img/modern-house-big.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;
+    background-blend-mode: darken;
 
 	.header {
 		position: fixed;
@@ -59,11 +61,43 @@ table {
         width: 100%;
         padding: 20px 100px;
         background-color: transparent;
+        transition: background-color 0.3s ease;
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 100;
 	}
+
+    .white-header {
+        background-color: #fff;
+
+        .logo {
+            font-size: 3rem;
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            position: relative;
+            font-size: 1.8rem;
+            color: #000;
+            font-weight: 400;
+            text-decoration: none;
+            margin-left: 4rem;
+        }
+
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0.2rem;
+            background: #000;
+            transition: .3s;
+        }
+    }
 
     .logo {
         font-size: 3rem;
@@ -95,4 +129,28 @@ table {
     .navbar a:hover::before {
         width: 100%;
     }
+
+    .left-container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 30%;
+        color: #fff;
+
+        .header-title {
+            font-size: 5rem;
+            font-weight: 100;
+            width: 60rem;
+        }
+
+        .header-text {
+            margin-top: 2rem;
+            width: 65rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.main {
+    min-height: 100vh;
 }
