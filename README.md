@@ -1,1 +1,1 @@
-# CozyRent-page
+# CozyRent-HomePage
