@@ -2,7 +2,7 @@
 
 **CozyRent** is a simple, one-page website designed for apartment rentals. The site aims to present essential information about available listings and provides an intuitive way for users to contact and book apartments.
 
-![CozyRent Screenshot](./images/screenshot.png)
+![CozyRent Screenshot](./src/img/ss_readme.png)
 
 ## 🌟 Project Overview
 
